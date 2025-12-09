@@ -14,9 +14,9 @@ const App: React.FC = () => {
     // 1. Try Local File first
     const localPath = '/Christmas.mp3';
     // 2. Fallback to a copyright-free Christmas track (Jingle Bells Jazz)
-    const onlineBackup = 'https://cdn.pixabay.com/download/audio/2022/11/22/audio_febc508520.mp3';
+    const onlineBackup = 'https://files.catbox.moe/m8j40y.mp3';
 
-    const audio = new Audio(localPath);
+    const audio = new Audio("https://files.catbox.moe/m8j40y.mp3");
     audio.loop = true;
     audio.volume = 0.5;
     

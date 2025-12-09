@@ -12,7 +12,7 @@ const App: React.FC = () => {
   // Initialize Audio with Smart Fallback
   useEffect(() => {
     // 1. Try Local File first
-    const localPath = '/Christmas.m4a';
+    const localPath = '/Christmas.mp3';
     // 2. Fallback to a copyright-free Christmas track (Jingle Bells Jazz)
     const onlineBackup = 'https://cdn.pixabay.com/download/audio/2022/11/22/audio_febc508520.mp3';
 
@@ -22,7 +22,7 @@ const App: React.FC = () => {
     
     // Smart Recovery: If local file fails, switch to online backup seamlessly
     audio.addEventListener('error', (e) => {
-        console.warn("⚠️ Local 'Christmas.m4a' not found. Switching to online backup music.");
+        console.warn("⚠️ Local '/Christmas.mp3' not found. Switching to online backup music.");
         // Switch source and reload
         audio.src = onlineBackup;
     });

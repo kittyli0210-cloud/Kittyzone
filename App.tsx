@@ -12,7 +12,7 @@ const App: React.FC = () => {
   // Initialize Audio with Smart Fallback
   useEffect(() => {
     // 1. Try Local File first
-    const localPath = 'Christmas.m4a';
+    const localPath = '/Christmas.m4a';
     // 2. Fallback to a copyright-free Christmas track (Jingle Bells Jazz)
     const onlineBackup = 'https://cdn.pixabay.com/download/audio/2022/11/22/audio_febc508520.mp3';
 

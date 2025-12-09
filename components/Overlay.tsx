@@ -20,7 +20,7 @@ export const Overlay: React.FC<OverlayProps> = ({ isTreeForm, toggleForm }) => {
           🍅🍅🍅
         </h3>
         <h1 className="text-white text-4xl md:text-6xl font-serif text-center" style={{ fontFamily: '"Cinzel", serif' }}>
-          MERRY CHRISTMAS
+          MERRY TOMATOMAS
         </h1>
       </header>
 
